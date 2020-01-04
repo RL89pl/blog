@@ -1,0 +1,9 @@
+[pl]
+  title = "Robert Lewandowski"
+  languageName = "Polish"
+  weight = 1
+
+[en]
+  title = "Robert Lewandowski"
+  languageName = "English"
+  weight = 2
