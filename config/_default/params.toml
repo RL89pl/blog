@@ -28,9 +28,9 @@ talksGroupByDate = "2019" # "2019-01": group by month, "2019": group by year
 
 # whoami: usage - home page sidebar, single page bottom of post. all values can be empty
 myname = "Robert Lewandowski"
-email = "rl89@interia.pl"
+email = "rl89pl@gmail.com"
 whoami = "Problem Solver Developer"
-useGravatar = true
+useGravatar = false
 location = "Poznań, Poland"
 organization = "Asgard Sp. z o.o."
 link = "https://github.com/rl89pl"
@@ -107,7 +107,7 @@ commento = false
   dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [socialOptions] # if set, social icons will show up.
-  email = "mailto:rl89@interia.pl"
+  email = "mailto:rl89pl@gmail.com"
   facebook = ""
   twitter = "https://twitter.com/RL89pl"
   github = "https://github.com/rl89pl"
