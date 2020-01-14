@@ -32,10 +32,11 @@ Repozytorium projektu: [Car Manager](https://github.com/RL89pl/car-manager)
 ```mermaid
 gantt
 section Car Manager
-Skrypt + baza danych :active,    des1, 2020-01-10,2020-01-12
-Django        :  des2, after des1, 3d
+Skrypt + baza danych :done,    des1, 2020-01-12,2020-01-14
+Django        :active,  des2, after des1, 2d
 Desktop app   :         des3, after des2, 2d
 Mobile app   :         des4, after des3, 2d
+
 ```
 ```msc
 Klient->Program: Uruchomienie
