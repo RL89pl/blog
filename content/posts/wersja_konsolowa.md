@@ -187,19 +187,42 @@ def addAutoToDatabase(database):
 ```
 Skoro mamy już opcję dodania aut, to czas na opcję dodania wpisów:
 ```Python
-def addAutoToDatabase(database):
-    nazwa = input("Podaj nazwę auta: ")
-    marka = input("Podaj markę auta: ")
-    rocznik = input("Podaj rocznik auta: ")
-    
+def addStatDatabase(database,auto = 1):
+    wybor_daty = False
+    wybor_do_pelna = False
+    while wybor_daty == False:
+        data_dzis = input("Wstawić dzisiejszą datę? T/N")
+        if data_dzis == "t" or data_dzis == "T":
+            data = date.today()
+            wybor_daty = True
+        elif data_dzis == "n" or data_dzis == "N":
+            data = input("Podaj datę tankowania: ")
+            wybor_daty = True
+        else:
+            wybor_daty = False
+    godzina = input("Podaj godzinę: ")
+    licznik_km = input("Podaj stan licznika kilometrów: ")
+    cena = float(input("Podaj cenę: "))
+    ilosc_litrow = float(input("Podaj ilość zatankowanego paliwa: "))
+    while wybor_do_pelna == False:
+        do_pelna = input("Czy zatankowałeś do pełna? T/N")
+        if do_pelna == "t" or do_pelna == "T":
+            do_pelna = 1
+            wybor_do_pelna = True
+        elif do_pelna == "n" or do_pelna == "N":
+            do_pelna = 0
+            wybor_do_pelna = True
+        else:
+            wybor_do_pelna = False
+    koszt = cena * ilosc_litrow
     try:
         sqliteConnection = sqlite3.connect(database)
         cursor = sqliteConnection.cursor()
 
-        sqlite_insert_query = """INSERT INTO `car`
-                            ('nazwa', 'marka', 'rocznik') 
+        sqlite_insert_query = """INSERT INTO `stats`
+                            ('data', 'godzina', 'licznik_km', 'cena', 'ilosc_litrow', 'koszt', 'do_pelna', 'car_id') 
                             VALUES 
-                            ('{}','{}',{})""".format(nazwa, marka, rocznik)
+                            ('{}','{}',{},{},{},{},{},{})""".format(data, godzina, licznik_km, cena, ilosc_litrow, koszt,do_pelna, auto)
 
         count = cursor.execute(sqlite_insert_query)
         sqliteConnection.commit()
