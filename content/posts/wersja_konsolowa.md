@@ -1,7 +1,7 @@
 ---
 title: "Car manager - wersja konsolowa cz.1"
-date: 2020-01-14T15:58:37+01:00
-draft: true
+date: 2020-01-14T16:38:49+01:00
+draft: false
 description: "Tworzenie wersji konsolowej aplikacji."
 tags:
 - Python
@@ -11,7 +11,6 @@ categories:
 - Projekt
 libraries:
 - mermaid
-- msc
 featured_image: "ikony_tematow/programming.png"
 ---
 ### Wprowadzenie
