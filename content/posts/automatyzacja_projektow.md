@@ -16,7 +16,7 @@ libraries:
 featured_image: "ikony_tematow/graph2.png"
 ---
 ### Wprowadzenie
-
+![Automatyzacja](/images/ikony_tematow/graph2.png) 
 Trzeba szanować swój czas i w miarę możliwości automatyzować wszystko, co jest uciążliwe, monotonne, często powtarzalne. 
 Postanowiłem ułatwić sobie pracę przy tworzeniu nowego projektu, a także szybkie rozpoczęcie pisania nawet testowego skryptu.
 
