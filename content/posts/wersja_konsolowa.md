@@ -28,7 +28,6 @@ Mobile app   :         des4, after des3, 2d
 Czas na rozpoczęcie pracy nad pierwszą wersją aplikacji, wpierw konsolowej napisanej w Pythonie.
 Baza danych w prostym SQlite.
 Repozytorium projektu: [Car Manager](https://github.com/RL89pl/car-manager)
-By ułatwić sobie pracę z opisywaniem kodu na blogu, kod będzie dzielony na funkcje. Na sam koniec przerobię to na klasy, by mieć później lepszy wgląd do kodu.
 
 ### Praca z bazą danych
 
