@@ -1,5 +1,5 @@
 ---
-title: "Hackyeah"
+title: "Django - Quick Tips - Templatetags"
 date: 2021-10-16T00:00:10+02:00
 description: "Django - quick tips - Start"
 tags:
