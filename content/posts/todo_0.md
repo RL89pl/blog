@@ -1,6 +1,6 @@
 ---
 title: "ToDo APP - opis projektu"
-date: 2021-02-06T00:45:00+02:00
+date: 2022-02-06T00:45:00+02:00
 description: "Opis projektu aplikacji typu TODO"
 series:
 - ToDo
